@@ -1,0 +1,82 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+  background: linear-gradient(to bottom right,#5dc6fc,#cd4676);
+  background-size: cover;
+}
+
+.calculator{
+  width: 10em;
+  background: linear-gradient(#7306d8, #4389A2);
+  margin: 2em auto;
+}
+input{
+height: 2em;
+}
+
+.keys,.top-screen{
+  overflow: hidden;
+}
+
+.keys span, .top-screen span{
+  float: left;
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .2s ease;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.keys span.operator {
+background:rgba(255,255,255,0.1);
+border-right: 1;
+  color: rgba(0,0,0,0.5);
+}
+
+.keys .num {
+  text-shadow: 1px 1px #000;
+}
+
+.keys span.equals{
+  color: #3dbeff; 
+}
+
+.keys span:hover{
+ background:rgba(255,255,255,0.3);
+}
+
+.keys span.equals:hover {
+background:rgba(13,201,227,0.9);
+color:#fff;
+}
+
+.keys .ac:hover, .keys .clear:hover{ 
+color: #fff;
+background-color: red;
+}
+
+.keys > span:hover{
+  color:#3dbeff;
+}
+
+.keys > span.operator:hover{
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+}
+
+a.back {
+  text-decoration:none;
+  padding-left: .5em;
+}
